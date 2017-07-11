@@ -43,7 +43,7 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         cell.textLabel?.text = "category: \(sound[indexPath.row].category!)"
-        cell.detailTextLabel?.text = "Name: \(sound[indexPath.row].fileName!)"
+        cell.detailTextLabel?.text = "Name: \(sound[indexPath.row].fileName!), ID: \(sound[indexPath.row].iD!)"
 
         return cell
     }
